@@ -44,6 +44,16 @@ The core principle involves modifying the last bit of each color channel (Red, G
         * When prompted, upload your cover image or stego-image using the provided file uploader. **Ensure images are in PNG format.**
         * Enter your secret message or the desired output filename.
 
+## Sample Files
+
+For quick testing and demonstration, this repository includes:
+* `sample_images/cover_image.png`: A small PNG image that can be used as a cover image for hiding messages.
+* `sample_images/stego_image.png`: A sample stego-image (generated from `cover_image.png` with a hidden message) that can be used for extraction testing.
+
+**How to use them:** When prompted to upload an image in the Colab notebook, navigate to the `sample_images/` folder on your local machine to select these files.
+
+
+
 ## Important Notes
 
 * **Image Format:** For successful steganography and retrieval, **always use lossless image formats like PNG (.png) or BMP (.bmp)**. Saving or converting the stego-image to a lossy format like JPEG (.jpg) will likely destroy the hidden data.
